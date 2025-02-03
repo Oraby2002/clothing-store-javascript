@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clothing Marketing</title>
+    <!--Bootstrap -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!--  Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link href="form.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--form-background-->
+    <div class="form-background">
+      <div class="form-container shadow">
+        <h2 class="form-title">Register a new account</h2>
+        <!--form-->
+        <form action="landing_page.html" method="get">
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Write your full name"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="example@email.com"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="Enter Password"
+            />
+          </div>
+          <button
+            type="button"
+            id="registerBtn"
+            onclick="result()"
+            class="btn submit-btn"
+          >
+            Check in
+          </button>
+          <p id="msg_error"></p>
+        </form>
+        <div class="social-icons mt-4">
+          <a href="https://facebook.com" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://instagram.com" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://google.com" target="_blank"
+            ><i class="fab fa-google"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!--Bootstrap JavaScript -->
+
+    <script src="form.js"></script>
+  </body>
+</html>

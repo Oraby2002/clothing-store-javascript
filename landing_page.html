@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clothing Store</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="landing_page.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <div>
+          <a class="navbar-brand" href="#">Clothing Store</a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="form.html">Register</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#men">Men</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#women">Women</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kids">kids</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="text-center mb-4">
+      <h4>Items Purchased: <span id="counter">0</span></h4>
+      <p id="msg_count"></p>
+      <button id="reset-btn" class="btn btn-danger mt-3">Reset Counter</button>
+    </div>
+    <!-- Men Products Section -->
+    <section id="men" class="product-section">
+      <div class="container">
+        <h2 class="text-center mb-5">Men's Collection</h2>
+        <div class="row" id="product-container">
+          <div class="col-md-4">
+            <div class="card product-card">
+              <img
+                src="img/men's/Stylish Jacket.jpg"
+                class="card-img-top"
+                alt="Men's Product 1"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Stylish Jacket</h5>
+                <p class="card-text">$49.99</p>
+                <a href="#" class="btn btn-primary buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card product-card">
+              <img
+                src="img/men's/Casual T-Shirt.jpg"
+                class="card-img-top"
+                alt="Men's Product 2"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Casual T-Shirt</h5>
+                <p class="card-text">$19.99</p>
+                <a href="#" class="btn btn-primary buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card product-card">
+              <img
+                src="img/men's/Classic Jeans.jpg"
+                class="card-img-top"
+                alt="Men's Product 3"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Classic Jeans</h5>
+                <p class="card-text">$39.99</p>
+                <a href="#" class="btn btn-primary buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- kids Products Section -->
+    <section id="kids" class="product-section bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">kids Collection</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card product-card">
+              <img
+                src="img/kid's/imge_kids1.jpg"
+                class="card-img-top"
+                alt="Women's Product 1"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Style Jacket</h5>
+                <p class="card-text">$60.99</p>
+                <a href="#" class="btn btn-primary buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card product-card">
+              <img
+                src="img/kid's/image_kids2.jpg"
+                class="card-img-top"
+                alt="Women's Product 2"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Style Jacket</h5>
+                <p class="card-text">$24.99</p>
+                <a href="#" class="btn btn-primary buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card product-card">
+              <img
+                src="img/kid's/image_kids3.webp"
+                class="card-img-top"
+                alt="Women's Product 3"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Style Dress</h5>
+                <p class="card-text">$34.99</p>
+                <a href="#" class="btn btn-primary buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="women" class="product-section">
+      <div class="container">
+        <h2 class="text-center mb-5">Women's Collection</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card product-card">
+              <img
+                src="img/wommen's/Elegant Dress.png"
+                class="card-img-top"
+                alt="Women's Product 1"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Elegant Dress</h5>
+                <p class="card-text">$59.99</p>
+                <a href="#" class="btn btn-primary buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card product-card">
+              <img
+                src="img/wommen's/Summer Top.jpg"
+                class="card-img-top"
+                alt="Women's Product 2"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Summer Top</h5>
+                <p class="card-text">$24.99</p>
+                <a href="#" class="btn btn-primary buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card product-card">
+              <img
+                src="img/wommen's/Trendy Skirt.jpg"
+                class="card-img-top"
+                alt="Women's Product 3"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Trendy Skirt</h5>
+                <p class="card-text">$34.99</p>
+                <a href="#" class="btn btn-primary buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Best Seller Section -->
+    <section id="best-seller" class="product-section bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Best Sellers - 30% Off</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="img/best_Saller/brow2.jpg"
+                class="card-img-top"
+                alt="Best Seller Product 1"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">style Dress</h5>
+                <p class="card-text">
+                  <del>$69.99</del> <span class="text-danger">$48.99</span>
+                </p>
+                <a href="#" class="btn btn-primary buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="img/best_Saller/kd1.jpg"
+                class="card-img-top"
+                alt="Best Seller Product 2"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Jacket Style</h5>
+                <p class="card-text">
+                  <del>$39.99</del> <span class="text-danger">$27.99</span>
+                </p>
+                <a href="#" class="btn btn-primary buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="img/best_Saller/cp4.jpg"
+                class="card-img-top"
+                alt="Best Seller Product 3"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Shirt Style</h5>
+                <p class="card-text">
+                  <del>$89.99</del> <span class="text-danger">$62.99</span>
+                </p>
+                <a href="#" class="btn btn-primary buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="slider-section" class="container my-5">
+      <h2 class="text-center mb-4">More shapes</h2>
+      <div id="slider" class="slider">
+        <img id="slider-image" src="" alt="Slider Image" />
+      </div>
+      <div class="slider-controls text-center mt-3">
+        <button id="prevBtn">«</button>
+        <button id="nextBtn">»</button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <h4>Follow Me</h4>
+        <div class="social-icons mt-3">
+          <a href="https://facebook.com" target="_blank" class="icon facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            class="icon instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" class="icon twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+        <p class="mt-4">&copy; 2024 My Website. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="landing.js"></script>
+  </body>
+</html>

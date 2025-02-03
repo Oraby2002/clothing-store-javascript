@@ -1,0 +1,176 @@
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #ff5733 !important;
+}
+
+.product-section {
+  padding: 50px 0;
+}
+
+.product-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  background-color: #453e3eeb;
+  color: white;
+  padding: 20px 0;
+}
+
+/* star icon*/
+body {
+  font-family: Arial, sans-serif;
+}
+.card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.star {
+  cursor: pointer;
+  font-size: 24px;
+  margin: 0 5px;
+}
+.star.selected {
+  color: gold;
+}
+.fav-icon {
+  cursor: pointer;
+  font-size: 24px;
+  color: black;
+  margin-top: 15px;
+  display: inline-block;
+}
+.fav-icon.selected {
+  color: red;
+}
+/*
+best seller*/
+#best-seller {
+  background-color: #f8f9fa;
+}
+
+#best-seller .product-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+#best-seller .product-card:hover {
+  transform: scale(1.05);
+}
+
+#best-seller .card-text .text-danger {
+  color: #e74c3c;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#best-seller h2 {
+  color: #333;
+  font-size: 2em;
+}
+
+/* 
+slider */
+#slider {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+#slider img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.slider-controls button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.slider-controls button:hover {
+  background-color: #0056b3;
+}
+
+.buy-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.buy-btn:hover {
+  background-color: #0056b3;
+}
+/* 00 */
+#footer {
+  background-color: #222;
+  color: white;
+}
+
+#footer h4 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.icon {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  background-color: #333;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  background-color: #007bff;
+}
+
+.icon.facebook:hover {
+  background-color: #24b2b5;
+}
+
+.icon.instagram:hover {
+  background-color: #e4405f;
+}
+
+.icon.twitter:hover {
+  background-color: #1da1f2;
+}
+
+.icon.linkedin:hover {
+  background-color: #0077b5;
+}
+
+#footer p {
+  margin-top: 15px;
+  font-size: 14px;
+}
